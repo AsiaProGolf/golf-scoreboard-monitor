@@ -1,0 +1,7 @@
+{
+  "event_label": "My Tournament",
+  "eventId": "REPLACE_ME",
+  "shopId": "REPLACE_ME",
+  "watch_fields": ["notice", "eventStatus", "recentlyEventRoundId"],
+  "telegram_chat_id": "YOUR_CHAT_ID"
+}

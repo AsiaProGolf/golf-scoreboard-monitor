@@ -1,0 +1,9 @@
+# Local config holds your real event ids and chat id — never commit it.
+config.json
+
+# State files (the saved change-detection hash).
+*.state
+
+# Python bytecode.
+__pycache__/
+*.pyc

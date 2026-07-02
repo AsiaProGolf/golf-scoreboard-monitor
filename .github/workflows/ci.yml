@@ -1,0 +1,12 @@
+name: CI
+# Thin caller — all CI logic lives in the shared reusable workflow host.
+# Version-pinned to @v1 so a central change can't touch this repo until the tag moves.
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  ci:
+    uses: tobyrosen/oss-workflows/.github/workflows/ci.yml@v1

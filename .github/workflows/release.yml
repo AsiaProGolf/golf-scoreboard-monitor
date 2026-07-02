@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: read
+  id-token: write
+
+jobs:
+  release:
+    uses: tobyrosen/oss-workflows/.github/workflows/release.yml@v1
+    with:
+      profile: standalone-software
+      config-file: release-please-config.json
+      manifest-file: .release-please-manifest.json
+    secrets: inherit
